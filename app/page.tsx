@@ -7,6 +7,7 @@ export default function Home() {
       <h1>Integrations captain demo app</h1>
       This app showcases different ways to embed IntegrationsCaptain store.
       <Link href="/iframe">iFrame integration</Link>
+      <Link href="/react">React integration</Link>
     </main>
   );
 }
