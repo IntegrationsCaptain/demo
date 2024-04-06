@@ -1,4 +1,4 @@
-import { Store } from "integrations-captain-react";
+import { Store } from "@integrationscaptain/react";
 
 export default function DemoReact() {
   const STORE_URL = "http://demo.localhost:3002";

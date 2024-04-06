@@ -24,6 +24,14 @@ export default function Home() {
             React integration
           </Link>
         </li>
+        <li>
+          <Link
+            href="/react_path_change"
+            className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+          >
+            React path change integration
+          </Link>
+        </li>
       </ul>
     </main>
   );
