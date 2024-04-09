@@ -21,7 +21,7 @@ export default function Home() {
             href="/react"
             className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
           >
-            React integration
+            React: basic integration
           </Link>
         </li>
         <li>
@@ -29,7 +29,15 @@ export default function Home() {
             href="/react_path_change"
             className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
           >
-            React path change integration
+            React: react to path changes
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/react_install_status"
+            className="text-blue-600 hover:text-blue-800 visited:text-purple-600"
+          >
+            React: pass install status
           </Link>
         </li>
       </ul>
