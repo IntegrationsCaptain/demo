@@ -39,7 +39,7 @@ function useInstallState() {
 
 export default function DemoReactInstallStatusClient() {
   const NEXT_PUBLIC_STORE_URL =
-    process.env.NEXT_PUBLIC_STORE_URL || "http://demo.integrations.store";
+    process.env.NEXT_PUBLIC_STORE_URL || "https://demo.integrations.store";
   const { installed, onInstalled } = useInstallState();
   return (
     <div className="h-full w-full flex flex-col bg-gray-200 p-4 shadow-md">
