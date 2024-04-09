@@ -26,4 +26,4 @@ npm run dev
 
 ## About the demo
 
-This project is built with [NextJS](https://nextjs.org) and uses [Integrations Captain React package](https://www.npmjs.com/package/@integrationscaptain/react). By default, demo works with [Demo store](http://demo.integrations.store). To change the domain to your own store, set `NEXT_PUBLIC_STORE_URL` environment variable (you can use NextJS `.env` file).
+This project is built with [NextJS](https://nextjs.org) and uses [Integrations Captain React package](https://www.npmjs.com/package/@integrationscaptain/react). By default, demo works with [Demo store](https://demo.integrations.store). To change the domain to your own store, set `NEXT_PUBLIC_STORE_URL` environment variable (you can use NextJS `.env` file).
