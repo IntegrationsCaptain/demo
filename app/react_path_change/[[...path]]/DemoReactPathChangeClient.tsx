@@ -6,12 +6,12 @@ import { usePathname, useRouter } from "next/navigation";
 const CURRENT_PATH = "/react_path_change";
 
 export default function DemoReactPathChangeClient() {
-  const STORE_URL = "http://demo.localhost:3002";
+  const NEXT_PUBLIC_STORE_URL = "http://demo.localhost:3002";
   const path = usePathname();
   const pathWithoutCurrent = path.replace(CURRENT_PATH, "");
   return (
     <Store
-      url={`${STORE_URL}${pathWithoutCurrent}`}
+      url={`${NEXT_PUBLIC_STORE_URL}${pathWithoutCurrent}`}
       onStorePathChange={(path) => {
         window.history.pushState({}, "", `${CURRENT_PATH}${path}`);
       }}
