@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 const CURRENT_PATH = "/react_path_change";
 
 export default function DemoReactPathChangeClient() {
-  const STORE_URL = "http://demo.localhost:3002";
+  const STORE_URL = process.env.STORE_URL || "http://demo.integrations.store";
   const path = usePathname();
   const pathWithoutCurrent = path.replace(CURRENT_PATH, "");
   return (
