@@ -5,10 +5,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { paths } from "@/lib/paths";
 
-export default function NavMenu() {
+export default function NavMenu({noLogo}: {noLogo?: boolean}) {
   const pathname = usePathname();
   return (
-    <div className="m-2 flex items-center">
+    <div className="m-2 flex items-center gap-4">
+      {!noLogo && <h1 className="p-2 px-4">Acme Inc.</h1>}
       {paths.map((link) => (
         <Link
           href={link.href}
