@@ -42,15 +42,10 @@ export default function DemoReactInstallStatusClient() {
     process.env.NEXT_PUBLIC_STORE_URL || "https://demo.integrations.store";
   const { installed, onInstalled } = useInstallState();
   return (
-    <div className="h-full w-full flex flex-col bg-gray-200 p-4 shadow-md">
-      <div className="mb-2 p-2 bg-gray-300 rounded text-black text-lg font-semibold">
-        Managing install status externally
-      </div>
-      <Store
-        unsafeParams={{ installed }}
-        url={NEXT_PUBLIC_STORE_URL}
-        onInstalledChange={onInstalled}
-      />
-    </div>
+    <Store
+      unsafeParams={{ installed }}
+      url={NEXT_PUBLIC_STORE_URL}
+      onInstalledChange={onInstalled}
+    />
   );
 }
