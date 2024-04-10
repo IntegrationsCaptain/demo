@@ -1,5 +1,5 @@
-import DemoReactPathChangeClient from "./DemoReactPathChangeClient";
+import DemoReactPathChangeClient from './DemoReactPathChangeClient';
 
 export default function DemoReactPathChange() {
-  return <DemoReactPathChangeClient />;
+	return <DemoReactPathChangeClient />;
 }
