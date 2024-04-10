@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Acme inc.",
-  description: "Example integration with Integrations Captain",
+  title: "IntegrationsCaptain Demo",
+  description: "Example demo of IntegrationsCaptain embeddable store",
+  
 };
 
 export default function RootLayout({
