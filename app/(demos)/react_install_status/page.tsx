@@ -12,12 +12,8 @@ import { useCallback, useState } from "react";
 function useInstallState() {
   const [installed, setInstallState] = useState([
     {
-      listingId: "listing-id",
+      listingId: "4f26c716-a85e-48e4-b197-84f1c1dd5b26",
       installed: true,
-    },
-    {
-      listingId: "listing-id-2",
-      installed: false,
     },
   ]);
 
