@@ -1,5 +1,5 @@
-import DemoReactPathChangeClient from './DemoReactPathChangeClient';
+import StoreEmbed from './StoreEmbed';
 
-export default function DemoReactPathChange() {
-	return <DemoReactPathChangeClient />;
+export default function DemoReactPathChangeClient() {
+	return <StoreEmbed />;
 }

@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'IntegrationsCaptain Demo',
-	description: 'Example demo of IntegrationsCaptain embeddable store',
+	title: 'SideDish Demo',
+	description: 'Example demo of SideDish embeddable store',
 };
 
 export default function RootLayout({
