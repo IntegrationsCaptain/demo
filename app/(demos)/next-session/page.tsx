@@ -1,12 +1,12 @@
-import { createSafeSession, AcceptableParameters } from '@integrationscaptain/core';
-import { Store } from '@integrationscaptain/react';
+import { createSafeSession, AcceptableParameters } from '@sidedish/core';
+import { Store } from '@sidedish/react';
 
 //This is a server component
 const StoreEmbed = async ({ params }: { params: AcceptableParameters }) => {
 	// see docs for "Safe sessions"
 	try {
-		const apiKey = process.env.INTEGRATIONSCAPTAIN_API_KEY!;
-		const domain = process.env.INTEGRATIONSCAPTAIN_DOMAIN!;
+		const apiKey = process.env.SIDEDISH_API_KEY!;
+		const domain = process.env.SIDEDISH_DOMAIN!;
 		const { sessionId } = await createSafeSession({ apiKey, domain, data: params });
 
 		const STORE_URL = process.env.NEXT_PUBLIC_STORE_URL || 'https://demo.integrations.store';

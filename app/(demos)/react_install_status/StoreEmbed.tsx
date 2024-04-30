@@ -1,6 +1,6 @@
 'use client';
 import { z } from 'zod';
-import { CallbackEvent, Store } from '@integrationscaptain/react';
+import { CallbackEvent, Store } from '@sidedish/react';
 
 const callbackEventSchema = z.object({
 	listingId: z.string(),

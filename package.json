@@ -1,6 +1,6 @@
 {
-	"name": "integrations-captain-demo",
-	"version": "0.1.0",
+	"name": "sidedish-demo",
+	"version": "0.2.0",
 	"private": true,
 	"scripts": {
 		"build": "next build",
@@ -10,8 +10,8 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"@integrationscaptain/core": "^0.3.8",
-		"@integrationscaptain/react": "^0.3.4",
+		"@sidedish/core": "^0.4.0",
+		"@sidedish/react": "^0.4.0",
 		"@vercel/style-guide": "^6.0.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.0",

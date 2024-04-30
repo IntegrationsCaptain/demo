@@ -1,6 +1,6 @@
 'use client';
 
-import { Store } from '@integrationscaptain/react';
+import { Store } from '@sidedish/react';
 import { usePathname } from 'next/navigation';
 
 const StoreEmbed = () => {
