@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@sidedish/core": "^0.4.0",
-		"@sidedish/react": "^0.4.0",
+		"@sidedish/react": "^0.4.2",
 		"@vercel/style-guide": "^6.0.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.0",
