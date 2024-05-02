@@ -1,11 +1,14 @@
 import { StoreEmbed } from './StoreEmbed';
 
 async function getInstalledListings(): Promise<string[]> {
-	return ['4f26c716-a85e-48e4-b197-84f1c1dd5b26'];
+	// since we are constantly resetting the database in the demo environment, we will not hard code the installed listing id
+	// but will load one from api
+	//fetch(`/api/listings`)
+	return [];
 }
 
 export default async function DemoReactInstallStatusClient() {
 	const installedListings = await getInstalledListings();
 
-	return <StoreEmbed installed={installedListings} />;
+	return <StoreEmbed installedListings={installedListings} />;
 }
