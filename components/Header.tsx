@@ -11,7 +11,7 @@ const Header = () => (
 		</Link>
 		<NavMenu />
 		<div className="self-center border-2 border-dotted border-yellow-500 bg-yellow-100 px-2 py-3 text-xs uppercase">
-			This header is not part of the store
+			This header is not a part of the store
 		</div>
 	</div>
 );

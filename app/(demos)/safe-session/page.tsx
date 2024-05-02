@@ -1,3 +1,4 @@
+import { getFakeAuth } from '@/lib/fakeAuth';
 import { createSafeSession, AcceptableParameters } from '@sidedish/core';
 import { Store } from '@sidedish/react';
 
@@ -17,19 +18,17 @@ const StoreEmbed = async ({ params }: { params: AcceptableParameters }) => {
 	}
 };
 
-const getActiveUser = () => {
-	return {
-		id: 'SOME_USER_ID',
-		fullName: 'Demo user',
-	};
+export const metadata = {
+	title: 'Safe session demo',
 };
 
-export default function NextJSDemo() {
+export default async function NextJSDemo() {
 	// usually these will come from your auth
-	const user = getActiveUser();
+	const user = await getFakeAuth();
 	const params = {
 		userId: user.id,
-		userName: user.fullName,
+		userName: `${user.firstName} ${user.lastName}`,
+		accountId: user.accountId,
 	};
 	return <StoreEmbed params={params} />;
 }

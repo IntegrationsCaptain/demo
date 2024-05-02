@@ -3,12 +3,13 @@ import { z } from 'zod';
 import { CallbackEvent, Store } from '@sidedish/react';
 import { toast } from 'sonner';
 import { useState } from 'react';
+import { User } from '@/lib/fakeAuth';
 
 const callbackEventSchema = z.object({
 	listingId: z.string(),
 });
 
-export const StoreEmbed = ({ installedListings }: { installedListings: string[] }) => {
+export const StoreEmbed = ({ installedListings, user }: { installedListings: string[]; user: User }) => {
 	const [installed, setInstalled] = useState(installedListings);
 	const onCallback = (e: CallbackEvent) => {
 		if (e.actionIdentifier === 'INSTALL') {
@@ -34,6 +35,12 @@ export const StoreEmbed = ({ installedListings }: { installedListings: string[] 
 		}
 	};
 
+	const unsafeParams = {
+		purchases: installed,
+		userId: user.id,
+		accountId: user.accountId,
+		userName: `${user.firstName} ${user.lastName}`,
+	};
 	const STORE_URL = process.env.NEXT_PUBLIC_STORE_URL || 'https://demo.integrations.store';
-	return <Store url={STORE_URL} unsafeParams={{ purchases: installed }} onCallback={onCallback} />;
+	return <Store url={STORE_URL} unsafeParams={unsafeParams} onCallback={onCallback} />;
 };

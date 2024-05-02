@@ -4,14 +4,18 @@ import { Store } from '@sidedish/react';
 import { usePathname } from 'next/navigation';
 import { toast } from 'sonner';
 
+export const metadata = {
+	title: 'Update URL demo',
+};
+
 const StoreEmbed = () => {
 	const STORE_URL = process.env.NEXT_PUBLIC_STORE_URL || 'https://demo.integrations.store';
-	const STORE_PAGE_PATH = '/react_path_change';
+	const STORE_PAGE_PATH = '/path-change';
 	const pathname = usePathname();
 
 	// listen to path change and update the url
 	const onPathChange = (path: string) => {
-		const newPath = `${STORE_PAGE_PATH}${path}`;
+		const newPath = `${STORE_PAGE_PATH}${path === '/' ? '' : path}`;
 		if (newPath === window.location.pathname) return;
 		window.history.pushState({}, '', newPath);
 
