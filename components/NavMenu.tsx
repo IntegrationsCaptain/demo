@@ -7,9 +7,9 @@ import { usePathname } from 'next/navigation';
 export const paths: { href: string; name: string }[] = [
 	{ href: '/iframe', name: 'iframe' },
 	{ href: '/react-basic', name: 'Basic React' },
-	{ href: '/next-session', name: 'NextJS with Private session' },
-	{ href: '/react_install_status', name: 'Callback with unmanaged purchases' },
-	{ href: '/react_path_change', name: 'Update pathname' },
+	{ href: '/safe-session', name: 'Safe session' },
+	{ href: '/unmanaged-purchases', name: 'Unmanaged purchases' },
+	{ href: '/path-change', name: 'Update URL' },
 	{ href: '/specific-listing', name: 'Specific listing' },
 ];
 

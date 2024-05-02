@@ -18,6 +18,10 @@ const StoreEmbed = async ({ params }: { params: AcceptableParameters }) => {
 	}
 };
 
+export const metadata = {
+	title: 'Safe session demo',
+};
+
 export default async function NextJSDemo() {
 	// usually these will come from your auth
 	const user = await getFakeAuth();
