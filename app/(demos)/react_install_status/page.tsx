@@ -1,3 +1,4 @@
+import { getFakeAuth } from '@/lib/fakeAuth';
 import { StoreEmbed } from './StoreEmbed';
 
 async function getInstalledListings(): Promise<string[]> {
@@ -9,6 +10,7 @@ async function getInstalledListings(): Promise<string[]> {
 
 export default async function DemoReactInstallStatusClient() {
 	const installedListings = await getInstalledListings();
+	const user = await getFakeAuth();
 
-	return <StoreEmbed installedListings={installedListings} />;
+	return <StoreEmbed user={user} installedListings={installedListings} />;
 }
