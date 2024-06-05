@@ -2,7 +2,7 @@ import { getFakeAuth } from '@/lib/fakeAuth';
 import { StoreEmbed } from './StoreEmbed';
 
 async function getInstalledListings(): Promise<string[]> {
-	return ['c140c3a4-209a-4bb1-9dd6-635f9ae1bffa'];
+	return [process.env.FAKE_PURCHASED_LISTING_ID!];
 }
 
 export const metadata = {
